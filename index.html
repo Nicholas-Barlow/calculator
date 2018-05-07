@@ -6,5 +6,41 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </Head>
 <body>
-	
+	<div class="container">
+			<div class="col-lg-4 col-lg-offset-4 box">
+				<form name="calculator">
+					<input type="text" name="display" id="display">
+				</form>
+				<div>
+					<div class="row">
+						<input type="button" class="col-xs-3" name="seven" value="7" onclick="calculator.display.value += '7'">
+						<input type="button" class="col-xs-3" name="eight" value="8" onclick="calculator.display.value += '8'">
+						<input type="button" class="col-xs-3" name="nine" value="9" onclick="calculator.display.value += '9'">
+						<input type="button" class="operator col-xs-3" name="plus" value="+" onclick="calculator.display.value += '+'">
+					</div>
+					<div class="row">
+						<input type="button" class="col-xs-3" name="four" value="4" onclick="calculator.display.value += '4'">
+						<input type="button" class="col-xs-3" name="five" value="5" onclick="calculator.display.value += '5'">
+						<input type="button" class="col-xs-3" name="six" value="6" onclick="calculator.display.value += '6'">
+						<input type="button" class="operator col-xs-3" name="minus" value="-" onclick="calculator.display.value += '-'">
+					</div>
+					<div class="row">
+						<input type="button" class="col-xs-3" name="one" value="1" onclick="calculator.display.value += '1'">
+						<input type="button" class="col-xs-3" name="two" value="2" onclick="calculator.display.value += '2'">
+						<input type="button" class="col-xs-3" name="three" value="3" onclick="calculator.display.value += '3'">
+						<input type="button" class="col-xs-3 operator" name="times" value="*" onclick="calculator.display.value += '*'">
+					</div>
+					<div class="row">
+						<input type="button" class="col-xs-3" name="zero" value="0" onclick="calculator.display.value += '0'">
+						<input type="button" class="col-xs-3" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"">
+						<input type="button" class="col-xs-3" name="point" value="." onclick="calculator.display.value += '.'">
+						<input type="button" class="col-xs-3 operator" name="divided" value="/" onclick="calculator.display.value += '/'">
+					</div>
+					<div class="row">
+						<input type="button" class="col-xs-6" name="clear" value="Clear" onclick="calculator.display.value = ''">
+						<input type="button" class="col-xs-6 operator" name="exponent" value="^" onclick="calculator.display.value += 'Math.pow( , )'">
+					</div>
+				</div>
+		</div>
+	</div>
 </body>
